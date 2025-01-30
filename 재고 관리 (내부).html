@@ -18,9 +18,8 @@
                 </div>
                 <div class="col-sm-2">
                     <select class="form-select">
-                        <option selected>상태</option>
-                        <option value="1">품목코드</option>
-                        <option value="2">품목명</option>
+                        <option selected>품목코드</option>
+                        <option value="1">품목명</option>
                     </select>
                 </div>
                 <div class="col-sm-6">
@@ -34,7 +33,7 @@
                         data-bs-target="#modalDeliveryRegistration">출고등록</button>
                     <button type="button" class="btn btn-primary">조회</button>
                     <button type="button" class="btn btn-primary">수정</button>
-                    <button type="button" class="btn btn-primary">삭제</button>
+                    <button type="button" class="btn btn-danger">삭제</button>
                 </div>
             </div>
         </form>
@@ -55,7 +54,24 @@
                 </div>
                 <div class="modal-body">
                     <div class="container text-center">
-                        <form action="">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                    <form action="">
+                                    <select class="form-select">
+                                        <option selected>전체</option>
+                                        <option value="1">품목명</option>
+                                        <option value="2">물품번호</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control">
+                                        <button class="btn btn-success" type="submit">검색</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <form action="">
+                        </div>
                             <div class="row">
                                 <div class="col-sm-3">물품번호</div>
                                 <div class="col-sm-3">물품명</div>
